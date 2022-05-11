@@ -5,16 +5,19 @@ jobs:
     docker:
       - image: node:17
     steps:
+      - checkout
       - run: npm run lint
   test:
     docker:
       - image: node:17
     steps:
+      - checkout
       - run: npm run test
   analyze:
     docker:
       - image: node:17
     steps:
+      - checkout
       - run: npm run audit
 
 workflows:
