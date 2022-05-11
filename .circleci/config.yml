@@ -6,14 +6,14 @@ jobs:
       - image: node:17
     steps:
       - checkout
-      - run: npm install -g esw
+      - run: npm i
       - run: npm run lint
   test:
     docker:
       - image: node:17
     steps:
       - checkout
-      - run: npm install -g jest
+      - run: npm i
       - run: npm run test
   analyze:
     docker:
