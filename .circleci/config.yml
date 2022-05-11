@@ -20,7 +20,7 @@ jobs:
       - image: node:17
     steps:
       - checkout
-      - run: npm run audit
+      - run: npm audit
 
 workflows:
   node-workflow:
